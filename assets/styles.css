@@ -84,7 +84,15 @@ p {
     box-shadow: 5px 10px;
     transition: transform .2s;
 
+
 }
+
+.project:first-child {
+    min-height: 400px;
+    flex-basis: 95%;
+
+}
+
 
 #project {
     flex-wrap: wrap;
