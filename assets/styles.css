@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* css reset */
 }
 
 body {
-    background-image: url(./brick\ background.jpg);
-
+     background-image: url(./brick\ background.jpg);  
+/*adds brick background to webpage */
 
 }
 
@@ -17,7 +18,7 @@ header {
     justify-content: space-between;
     background-image: url(./abstract-dark-wood-lo-2560x1440.jpg);
     border-bottom: solid 10px brown;
-
+/* adds layout styling for the header */
 
 
 }
@@ -28,6 +29,7 @@ header h1 {
     font-family: 'Smythe', cursive;
     font-size: 5rem;
     color: gold;
+    /* adds styling to the header */
 
 
 }
@@ -35,6 +37,7 @@ header h1 {
 nav {
     width: 60%;
     font-family: 'Smythe', cursive;
+    /* adds styling structure to the nav bar */
 
 
 }
@@ -48,26 +51,30 @@ ul {
     font-size: 3rem;
     padding-top: 1%;
 
+/* adds more specific stying to the nav bar */
+
 }
 
 a {
     color: bisque;
+    /* adds font color to nav text*/
 
 }
 
 main {
     padding: 5%;
     margin: 5%;
-
+/* edits padding and margin for everything below the header */
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    min-width: 80%;
     margin-top: 5%;
     background-color: bisque;
     border: solid 10px brown;
     border-radius: 2rem;
+    /* adds styling structure to the boxes containing the content on the page */
 
 }
 
@@ -78,6 +85,7 @@ main {
     font-family: 'Roboto', sans-serif;
     padding-right: 2%;
     font-size: 2.5rem;
+    /* adds style to the my subtitle side bar */
 
 }
 
@@ -89,6 +97,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    /* adds styling structure to the 3 content boxes below the header */
 }
 
 #about div {
@@ -96,14 +105,15 @@ main {
 }
 
 h2 {
-    margin-left: 3rem;
+   margin-left: 3rem;
+   /* moves h2 to the right */
 }
 
 img {
     margin-bottom: 0;
     border: solid 10px brown;
     border-radius: 2rem;
-
+/* adds border to images */
 
 }
 
@@ -117,10 +127,12 @@ p {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    /* adds styling to bio paragraph */
 }
 
 #about div img {
     width: 100%;
+    /* resizes profile picture */
 }
 
 .project {
@@ -131,38 +143,38 @@ p {
     box-shadow: 5px 10px;
     transition: transform .2s;
     background-color: brown;
-
-
+/* adds style to boxes that contain my projects */
 }
+
 
 .project:first-child {
     min-height: 400px;
     flex-basis: 95%;
+    /*makes first project bigger */
 
 }
 
-
-#project {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
 .project:hover {
     transform: scale(1.5);
+    /* resizes project squares */
 }
 
 .project a img {
     width: 95%;
     height: 90%;
+    /* resizes project squares  */
 }
 
 .p-title {
     font-size: 1.5rem;
     color: bisque;
+    /* edits fonts size and color for project squares */
 }
 
 .last-a {
     color: black
+    /* edits font colors for contact text */
 }
 
 
@@ -172,6 +184,7 @@ p {
     font-size: 2rem;
     color: black;
     align-items: center;
+    /* adds styling structure to contact container */
 
 }
 
