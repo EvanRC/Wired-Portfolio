@@ -84,7 +84,7 @@ main {
     border-right: 5px solid black;
     font-family: 'Roboto', sans-serif;
     padding-right: 2%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* adds style to the my subtitle side bar */
 
 }
@@ -197,3 +197,35 @@ font-family: 'Alkatra', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
 */
+
+
+
+@media only screen and (max-width: 1600px) {
+    .container{
+        display:block;
+        width:90%;
+       padding:5%;
+    }
+    .sub-title{
+        width:100%;
+        border-bottom: 5px solid black;
+    }
+    .main-content {
+        width: 90%;
+        display: block;
+        text-align: center;
+        padding:5%;
+        margin:5%;
+    }
+    #about div {
+        width: 100%
+    }
+    #project{
+        display:flex;
+    }
+    .project{
+        width:45%;
+        margin:1%;
+        padding:1%;
+    }
+  }
