@@ -6,8 +6,8 @@
 }
 
 body {
-     background-image: url(./brick\ background.jpg);  
-/*adds brick background to webpage */
+    background-image: url(./brick\ background.jpg);
+    /*adds brick background to webpage */
 
 }
 
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     background-image: url(./abstract-dark-wood-lo-2560x1440.jpg);
     border-bottom: solid 10px brown;
-/* adds layout styling for the header */
+    /* adds layout styling for the header */
 
 
 }
@@ -51,7 +51,7 @@ ul {
     font-size: 3rem;
     padding-top: 1%;
 
-/* adds more specific stying to the nav bar */
+    /* adds more specific stying to the nav bar */
 
 }
 
@@ -64,7 +64,7 @@ a {
 main {
     padding: 5%;
     margin: 5%;
-/* edits padding and margin for everything below the header */
+    /* edits padding and margin for everything below the header */
 }
 
 .container {
@@ -105,15 +105,15 @@ main {
 }
 
 h2 {
-   margin-left: 3rem;
-   /* moves h2 to the right */
+    margin-left: 3rem;
+    /* moves h2 to the right */
 }
 
 img {
     margin-bottom: 0;
     border: solid 10px brown;
     border-radius: 2rem;
-/* adds border to images */
+    /* adds border to images */
 
 }
 
@@ -143,7 +143,7 @@ p {
     box-shadow: 5px 10px;
     transition: transform .2s;
     background-color: brown;
-/* adds style to boxes that contain my projects */
+    /* adds style to boxes that contain my projects */
 }
 
 
@@ -174,16 +174,19 @@ p {
 
 .last-a {
     color: black
-    /* edits font colors for contact text */
+        /* edits font colors for contact text */
 }
 
 
 
 #c-list {
-    justify-content: space-between center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 2rem;
     color: black;
     align-items: center;
+
     /* adds styling structure to contact container */
 
 }
@@ -201,31 +204,85 @@ font-family: 'Work Sans', sans-serif;
 
 
 @media only screen and (max-width: 1600px) {
-    .container{
-        display:block;
-        width:90%;
-       padding:5%;
+    /* adds responisve layout for bigger acreens */
+    .container {
+        display: block;
+        width: 90%;
+        padding: 5%;
     }
-    .sub-title{
-        width:100%;
+
+    .sub-title {
+        width: 100%;
         border-bottom: 5px solid black;
     }
+
     .main-content {
         width: 90%;
         display: block;
         text-align: center;
-        padding:5%;
-        margin:5%;
+        padding: 5%;
+        margin: 5%;
     }
+
     #about div {
         width: 100%
     }
-    #project{
-        display:flex;
+
+    #project {
+        display: flex;
     }
-    .project{
-        width:45%;
-        margin:1%;
-        padding:1%;
+
+    .project {
+        width: 45%;
+        margin: 1%;
+        padding: 1%;
     }
-  }
+}
+
+
+@media only screen and (max-width: 500px) {
+    /* adds responsive layout for small screens */
+    header {
+        display: block;
+        text-align: center;
+
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul {
+        font-size: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .project {
+        width: 90%;
+        flex-basis: 90%;
+        min-height:250px
+    }
+
+
+   .c-list li{
+        word-wrap:break-word;
+        text-align: center;
+    }
+
+    #email{
+        font-size: 1rem;
+    }
+
+
+
+    /* .project:first-child {
+        height: 100%;
+        flex-basis: 95%;
+
+    } */
+
+}
